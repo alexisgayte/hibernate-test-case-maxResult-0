@@ -37,7 +37,7 @@ import org.junit.Test;
  * What's even better?  Fork hibernate-orm itself, add your test case directly to a module's unit tests, then
  * submit it as a PR!
  */
-public class ORMUnitTestCase extends BaseCoreFunctionalTestCase {
+public class ORM_HHH_11278UnitTestCase extends BaseCoreFunctionalTestCase {
 
 	// Add your entities here.
 	@Override
@@ -72,9 +72,9 @@ public class ORMUnitTestCase extends BaseCoreFunctionalTestCase {
 		//configuration.setProperty( AvailableSettings.GENERATE_STATISTICS, Boolean.TRUE.toString() );
 	}
 
-	// Add your tests, using standard JUnit.
+
 	@Test
-	public void hhh123Test() throws Exception {
+	public void HHH_11278_Test() throws Exception {
 
 		Session s = openSession();
 		Transaction tx = s.beginTransaction();
